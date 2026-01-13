@@ -38,10 +38,10 @@ X-Forwarded-For
 User → [Host:80] → Nginx → [app-network] → Backend:8080
 
 Использованные технологии:
-Python 3.11
-Nginx 1.25
-Docker
-Docker Compose
+Python 3.11,
+Nginx 1.25,
+Docker,
+Docker Compose,
 
 ---
 
