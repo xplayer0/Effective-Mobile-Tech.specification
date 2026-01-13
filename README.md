@@ -7,8 +7,6 @@ A test assignment for a DevOps position
 1. Убедитесь, что у вас установлены:
    - Docker
    - Docker Compose
-   - Python
-   - Nginx
 
 2. Клонируйте репозиторий (или создайте структуру вручную).
 
