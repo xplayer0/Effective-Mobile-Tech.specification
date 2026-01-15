@@ -1,6 +1,6 @@
 # Effective-Mobile-Tech.specification
-A test assignment for a DevOps position
 
+A test assignment for a DevOps position
 
 ## Как запустить проект
 
@@ -11,17 +11,21 @@ A test assignment for a DevOps position
 2. Клонируйте репозиторий (или создайте структуру вручную).
 
 3. Перейдите в директорию проекта и выполните:
+
    ```bash
    docker-compose up -d
+   ```
 
-#Как работает проект:
+## Как работает проект
 
-Backend (Python http.server):
+### Backend (Python http.server)
+
 Слушает порт 8080 внутри Docker-сети.
 Не публикует порт наружу.
 Отвечает на запрос / текстом Hello from Effective Mobile!.
 
-Nginx:
+### Nginx
+
 Принимает HTTP-запросы на порту 80 (проброшен на хост).
 Проксирует запросы к backend:8080 через внутреннюю сеть.
 
@@ -30,7 +34,8 @@ Host
 X-Real-IP
 X-Forwarded-For
 
-Сеть Docker:
+### Сеть Docker
+
 Контейнеры объединены в сеть app-network.
 Взаимодействие происходит по именам сервисов (backend, nginx).
 
@@ -45,6 +50,9 @@ Docker Compose,
 
 ---
 
-Остановка:
-bash
+## Остановка
+
+```bash
 docker-compose down
+```
+
